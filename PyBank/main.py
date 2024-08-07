@@ -1,7 +1,10 @@
- import pandas as pd
+import pandas as pd
+import os
 
-# Load the dataset
-file_path = r'Z:\Bootcamp\Challenge 3\Starter_Code\Starter_Code\PyBank\Resources\budget_data.csv'
+# Construct file path
+file_path = os.path.join("C:\\Users\\elena\\Documents\\Bootcamp\\Challenge 3\\Starter_Code (1)\\Starter_Code\\PyBank\\Resources", "budget_data.csv")
+
+# Read CSV file
 budget_data = pd.read_csv(file_path)
 
 # Total number of months included in the dataset
