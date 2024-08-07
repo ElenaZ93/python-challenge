@@ -33,3 +33,8 @@ print(f"Total: ${net_total}")
 print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase['Date']} (${greatest_increase['Change']})")
 print(f"Greatest Decrease in Profits: {greatest_decrease['Date']} (${greatest_decrease['Change']})")
+
+# Export the results to a text file
+output_file_path = os.path.join("C:\\Users\\elena\\Documents\\Bootcamp\\Challenge 3\\Starter_Code (1)\\Starter_Code\\PyBank\\Resources", "financial_analysis.txt")
+with open(output_file_path, 'w') as file:
+    file.write(results_summary)
